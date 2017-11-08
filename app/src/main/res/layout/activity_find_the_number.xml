@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/saisir"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lili.emptyactivity.findTheNumber.Game.java.FindTheNumber">
+
+    <TextView
+        android:id="@+id/txHistorique"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/messageAfficher"
+        android:layout_marginTop="12dp"
+        tools:text="50\n50\n" />
+
+    <TextView
+        android:id="@+id/messageAfficher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginTop="11dp"
+        android:text="" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="11dp"
+        android:max="8"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/saisir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Saisir une valeur entre 1 et 100"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/saisir"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/SaisirNumber"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.62"
+            android:ems="10"
+            android:inputType="number"
+            tools:text="20" />
+
+        <Button
+            android:id="@+id/btnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TESTER" />
+
+    </LinearLayout>
+
+</RelativeLayout>

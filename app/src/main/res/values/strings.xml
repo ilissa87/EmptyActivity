@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Empty Activity</string>
+    <string name="edit_massage">Entrer massage</string>
+    <string name="Button_send">Send</string>
+    <string name="alertMssageWin">voulez vous  Recommence ?</string>
+    <string name="alertTitreWin">Bravo,vous avez Gagner</string>
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+</resources>
